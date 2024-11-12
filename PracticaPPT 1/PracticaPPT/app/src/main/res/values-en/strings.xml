@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Rock, paper, scissors</string>
+    <string name="tv_ppt">ROCK PAPER SCISSORS</string>
+    <string name="tv_nick">Nick</string>
+    <string name="btn_confirm">SIGN UP</string>
+    <string name="btn_start">LETS PLAY</string>
+    <string name="btn_exit">EXIT</string>
+
+    <string name="tv_title">CHALLENGER</string>
+    <string name="tv_playerfound">Looking for...</string>
+    <string name="tv_player1">Player 1</string>
+    <string name="tv_player2">Player 2</string>
+    <string name="tv_vs">VS</string>
+    <string name="tv_winner">Winner</string>
+    <string name="tv_playerwinner">.</string>
+    <string name="btn_new">REMATCH</string>
+    <string name="btn_exit2">EXIT</string>
+</resources>

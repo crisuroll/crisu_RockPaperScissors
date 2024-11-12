@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppt_background">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_player1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_player2"
+                app:layout_constraintEnd_toEndOf="@+id/tv_player1"
+                app:layout_constraintStart_toStartOf="@+id/tv_player1"
+                app:layout_constraintTop_toTopOf="@+id/img_player2"
+                app:srcCompat="@drawable/loading" />
+
+            <ImageView
+                android:id="@+id/img_player2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="31dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_playerwinner"
+                app:layout_constraintEnd_toEndOf="@+id/tv_player2"
+                app:layout_constraintStart_toEndOf="@+id/tv_winner"
+                app:layout_constraintTop_toTopOf="@+id/tv_player2"
+                app:srcCompat="@drawable/loading" />
+
+            <Button
+                android:id="@+id/btn_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/splatoon"
+                android:onClick="btn_new_onClick"
+                android:text="@string/btn_new"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/splatoon"
+                android:text="@string/tv_winner"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_playerwinner"
+                app:layout_constraintStart_toEndOf="@+id/img_player1" />
+
+            <TextView
+                android:id="@+id/tv_player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/splatoon"
+                android:text="@string/tv_player1"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_vs"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_p"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="131dp"
+                android:layout_marginBottom="130dp"
+                android:background="@drawable/ppt_p"
+                android:onClick="imgbtn_p_onClick"
+                app:layout_constraintBottom_toTopOf="@+id/tv_player1"
+                app:layout_constraintEnd_toEndOf="@+id/imgbtn_s"
+                app:layout_constraintStart_toStartOf="@+id/imgbtn_s"
+                app:layout_constraintTop_toTopOf="@+id/tv_playerfound" />
+
+            <TextView
+                android:id="@+id/tv_player2"
+                android:layout_width="121dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="34dp"
+                android:fontFamily="@font/splatoon"
+                android:text="@string/tv_player2"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_player1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_player1" />
+
+            <Button
+                android:id="@+id/btn_exit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="38dp"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/splatoon"
+                android:onClick="btn_exit2_onClick"
+                android:text="@string/btn_exit2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_playerfound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/splatoon"
+                android:text="@string/tv_playerfound"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_r"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginBottom="91dp"
+                android:background="@drawable/ppt_r"
+                android:onClick="imgbtn_r_onClick"
+                app:layout_constraintBottom_toBottomOf="@+id/imgbtn_p"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+            <TextView
+                android:id="@+id/tv_playerwinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="43dp"
+                android:fontFamily="@font/splatoon"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_new"
+                app:layout_constraintEnd_toStartOf="@+id/btn_exit2" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/splatoon"
+                android:text="@string/tv_title"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_s"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="179dp"
+                android:layout_marginBottom="179dp"
+                android:background="@drawable/ppt_s"
+                android:onClick="imgbtn_s_onClick"
+                app:layout_constraintBottom_toTopOf="@+id/tv_winner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgbtn_r" />
+
+            <TextView
+                android:id="@+id/tv_vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/splatoon"
+                android:text="@string/tv_vs"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_winner"
+                app:layout_constraintStart_toStartOf="@+id/tv_winner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

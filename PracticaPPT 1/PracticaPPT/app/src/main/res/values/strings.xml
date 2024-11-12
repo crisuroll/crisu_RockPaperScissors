@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Piedra, papel, tijeras</string>
+    <string name="tv_ppt">PIEDRA PAPEL TIJERAS</string>
+    <string name="tv_nick">Nick</string>
+    <string name="btn_confirm">REGISTRARSE</string>
+    <string name="btn_start">A JUGAR</string>
+    <string name="btn_exit">SALIR</string>
+
+    <string name="tv_title">CONTRINCANTE</string>
+    <string name="tv_playerfound">Buscando...</string>
+    <string name="tv_player1">Jugador 1</string>
+    <string name="tv_player2">Jugador 2</string>
+    <string name="tv_vs">VS</string>
+    <string name="tv_winner">Ganador</string>
+    <string name="tv_playerwinner">.</string>
+    <string name="btn_new">NUEVA PARTIDA</string>
+    <string name="btn_exit2">SALIR</string>
+</resources>
